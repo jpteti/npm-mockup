@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="page-title">
+      <div class="page-title__lockup">
+        <h2 class="page-title__text">{{ page.title }}</h2>
+        {% if page.subtitle %}
+        <p class="page-title__subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+      </div>
+    </section>
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

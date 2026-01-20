@@ -2,3 +2,29 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  padding: 2rem 5rem;
+}
+
+.block {
+  margin-bottom: 1rem;
+}
+
+.document {
+  margin-top: 5rem;
+  max-width: 100ch;
+  font-size: var(--font-size-6);
+  line-height: 2rem;
+}
+
+.document p:first-child:first-letter {
+  color: oklch(var(--lch-npm-green));
+  float: left;
+  vertical-align: middle;
+  font-size: 4.6rem;
+  line-height: 3.7rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.188rem;
+}

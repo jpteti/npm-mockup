@@ -1,0 +1,4 @@
+.emphasize-fg {
+  color: oklch(var(--lch-npm-yellow));
+  font-weight: 600;
+}

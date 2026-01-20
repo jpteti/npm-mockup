@@ -1,8 +1,9 @@
 :root {
   --lch-npm-green: 38.75% 0.0556 172.23;
+  --lch-npm-green-darker: 28% 0.0556 172.23;
   --lch-npm-yellow: 76.55% 0.1385 91.55;
-}
 
-.emphasize-fg {
-  color: oklch(var(--lch-npm-yellow));
+  --lch-gray-1: 40% 0.012 172;
+  --lch-gray-2: 50% 0.012 172;  
+  --lch-gray-3: 0.680 0.012 172;
 }

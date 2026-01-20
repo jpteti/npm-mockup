@@ -1,0 +1,18 @@
+.page-title {
+  padding: 2rem 5rem;
+  background-image: linear-gradient(rgba(0,0,0,0.2), oklch(var(--lch-npm-green) / 0.7)), url('/assets/another-cover-v1.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.page-title__text {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}

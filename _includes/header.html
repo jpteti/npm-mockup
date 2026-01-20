@@ -1,9 +1,28 @@
-<header class="header">
-  <h1 class="header__logo">
-    <a href="#">
+<header class="header {{ include.class }} animate__animated animate__fadeIn">
+  <a href="/" class="header__logo-block">
+    <div class="header__logo" aria-hidden>
+      {% include logo.svg %}
+    </div>
+    <h1 class="header__logo-text">
       {{ site.title }}
-    </a>
-  </h1>
+    </h1>
+  </a>
+  <nav class="header__navigation">
+    <ul>
+      <li class="header__nav-item">
+        <a href="/about">About us</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/events">Events</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#">Resources</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#">Contact us</a>
+      </li>
+    </ul>
+  </nav>
   <!--
     <nav>
       <a href="/">Home</a>

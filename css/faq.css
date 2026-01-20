@@ -1,0 +1,11 @@
+.faq {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid oklch(var(--lch-gray-3));
+}
+
+.faq__question {
+  font-weight: bold;
+  font-size: var(--font-size-5);
+  cursor: pointer;
+}

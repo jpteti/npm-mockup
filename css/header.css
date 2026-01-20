@@ -1,19 +1,60 @@
 .header {
-  padding: 1rem;
-  background-color: oklch(var(--lch-npm-green));
+  padding: 2rem 5rem;
   color: oklch(var(--lch-npm-yellow));
+  background: oklch(var(--lch-npm-green));
+  /* border-top: 0.5rem solid oklch(var(--lch-npm-green-darker) / 0.8); */
   display: flex;
   align-items: center;
-  justify-items: space-between;
+  justify-content: space-between;
 }
 
-.header__logo a {
-  display: block;
+.header--transparent {
+  background: none;
+}
+
+.header__logo-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__logo {
+  color: inherit;
   width: 5rem;
   height: 5rem;
-  background: url('/assets/logo-emblemized.svg') no-repeat left;
-  background-size: contain;
-  /* Hide the text while keeping it accessible */
-  text-indent: -9999px;
-  overflow: hidden;
+  margin: 0;
+}
+
+.header__logo-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  font-weight: 200;
+}
+
+.header__navigation {
+  font-size: 1.25em;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.header__navigation ul {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__navigation a:hover {
+  text-decoration: underline;
+  text-decoration-color: oklch(var(--lch-npm-green));
+  text-decoration-thickness: 0.1rem;
 }
