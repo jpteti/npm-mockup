@@ -1,0 +1,19 @@
+.header {
+  padding: 1rem;
+  background-color: oklch(var(--lch-npm-green));
+  color: oklch(var(--lch-npm-yellow));
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
+.header__logo a {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background: url('/assets/logo-emblemized.svg') no-repeat left;
+  background-size: contain;
+  /* Hide the text while keeping it accessible */
+  text-indent: -9999px;
+  overflow: hidden;
+}

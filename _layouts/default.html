@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="hero">
+      <div class="hero__body">
+        <h2 class="hero__title">With the Holy Spirit <span class="emphasize-fg">and with fire</span></h2>
+      </div>
+    </section>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      &copy; to me
+    </footer>
+  </body>
+</html>
